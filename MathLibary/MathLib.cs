@@ -30,7 +30,7 @@ namespace MathLibary
         }
         public bool Pifagor(int a,int b,int c)
         {
-
+            Console.WriteLine("sonlarni kiriting :");
         }
         
     }
