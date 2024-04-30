@@ -24,11 +24,13 @@ namespace MathLibary
         }  
         public bool Tub(int n) 
         {
-            Console.WriteLine("Input the n");
-            string x = Console.ReadLine();
             for (int i = 2; i * i <= n;i++)
                 if(n%i == 0) return false;
             return true;
+        }
+        public bool Pifagor(int a,int b,int c)
+        {
+
         }
         
     }
