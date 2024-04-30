@@ -21,7 +21,8 @@ internal class Program
                 }
              case 3:
                 {
-
+                    obj.Pifagor(3, 4, 5);
+                    break;
                 }
 
         }

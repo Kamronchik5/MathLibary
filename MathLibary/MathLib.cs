@@ -28,9 +28,12 @@ namespace MathLibary
                 if(n%i == 0) return false;
             return true;
         }
-        public bool Pifagor(int a,int b,int c)
+        public bool Pifagor(double a,double b,double p)
         {
-            Console.WriteLine("sonlarni kiriting :");
+            double r;
+            r =(a * a + b * b);
+            if (p * p == r) return true;
+            else return false;
         }
         
     }
