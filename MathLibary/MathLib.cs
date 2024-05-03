@@ -6,8 +6,6 @@ namespace MathLibary
     {
         public void Fibo(int x)
         {
-            Console.WriteLine("Input the n");
-            string numbs = Console.ReadLine();
             int n = Convert.ToInt32(numbs);
             int[] numbers = new int[n];
             numbers[0] = 0;
@@ -19,7 +17,7 @@ namespace MathLibary
             }
             foreach (int num in numbers)
             {
-                Console.Write(num + "  ");
+                return num;
             }
         }  
         public bool Tub(int n) 
@@ -33,7 +31,7 @@ namespace MathLibary
             double r;
             r =(a * a + b * b);
             if (p * p == r) return true;
-            else return false;
+            return false;
         }
         
     }

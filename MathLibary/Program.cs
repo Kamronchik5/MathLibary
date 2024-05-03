@@ -4,27 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        MathLib obj = new MathLib();
-        c = Convert.ToInt32(Console.ReadLine());
-
-        switch (c)
-        {
-             case 1:
-                {
-                    obj.Fibo(20);
-                    break;
-                }
-             case 2:
-                {
-                    obj.Tub(23);
-                    break;
-                }
-             case 3:
-                {
-                    obj.Pifagor(3, 4, 5);
-                    break;
-                }
-
-        }
+        Rectangle rectangle = new Rectangle();
+        Triangle obj = new Triangle();
+        Console.WriteLine(rectangle.Area(50, 60));
+        Console.WriteLine(obj.Area(20, 30,40));
     }
 }
