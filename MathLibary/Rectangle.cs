@@ -4,7 +4,7 @@
     {
         public double a { get; set; }
         public double b { get; set; }
-        public double Area( double a , double b)
+        public double Area()
         {
             return a * b;
         }
