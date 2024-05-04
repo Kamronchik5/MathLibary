@@ -4,29 +4,28 @@ namespace MathLibary
 {
     internal class MathLib
     {
-        public void Fibo(int x)
+        public int[] Fibonaci(int n)
         {
-            int n = Convert.ToInt32(numbs);
-            int[] numbers = new int[n];
-            numbers[0] = 0;
-            numbers[1] = 1;
-
-            for (int i = 2; i < n; i++)
+            int[] arr = new int[n];
+            arr[0] = 0;
+            arr[1] = 1;
+            
+            for(int i = 2; i < n; i++)
             {
-                numbers[i] = numbers[i - 1] + numbers[i - 2];
+                arr[i] = arr[i - 1] + arr[i-2];
             }
-            foreach (int num in numbers)
-            {
-                return num;
-            }
-        }  
+            return arr;
+        }
         public bool Tub(int n) 
         {
             for (int i = 2; i * i <= n;i++)
                 if(n%i == 0) return false;
             return true;
         }
-        public bool Pifagor(double a,double b,double p)
+        public double a { get; set; }
+        public double b { get; set; }
+        public double p { get; set; }
+        public bool Pifagor()
         {
             double r;
             r =(a * a + b * b);
