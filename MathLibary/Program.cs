@@ -4,9 +4,22 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Rectangle rectangle = new Rectangle();
-        Triangle obj = new Triangle();
-        Console.WriteLine(rectangle.Area(50, 60));
-        Console.WriteLine(obj.Area(20, 30,40));
+        MathLib math = new MathLib();
+        math.a = 3;
+        math.b = 4;
+        math.p= 5;
+        Console.WriteLine(math.Pifagor());
+
+        int n = int.Parse(Console.ReadLine());
+        int[] fib = new int[n];
+        fib = math.Fibonaci(n);
+
+        foreach (int  result in fib)
+        {
+            Console.WriteLine(result);
+        }
+
+       Console.WriteLine(math.Tub(10));
+
     }
 }
