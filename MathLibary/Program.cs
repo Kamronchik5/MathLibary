@@ -21,5 +21,17 @@ internal class Program
 
        Console.WriteLine(math.Tub(10));
 
+        Rectangle angle = new Rectangle();
+        angle.a = 10;
+        angle.b = 20;
+        Console.WriteLine(angle.Area());
+
+        Triangle triangle = new Triangle();
+        triangle.a = 10;
+        triangle.b = 20;
+        triangle.c = 30;
+        
+        Console.WriteLine(triangle.Area());
+
     }
 }
